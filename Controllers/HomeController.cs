@@ -52,5 +52,9 @@ namespace deploy_cert_include_core.Controllers
         public IActionResult customcode() {
             return StatusCode(999, Json("Not allowed."));
         }
+        public string testcode()
+        {
+            return "001";
+        }
     }
 }
