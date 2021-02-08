@@ -33,4 +33,7 @@
 	<ItemGroup>
 	  <None Include="wwwroot\css\StyleSheet.css" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Properties\PublishProfiles\" />
+	</ItemGroup>
 </Project>
