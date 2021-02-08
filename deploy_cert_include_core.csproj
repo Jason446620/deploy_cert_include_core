@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>16a72f9d-f0c3-41de-915b-e912f6a18ab2</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirmaXadesNetCore" Version="1.1.0" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+  	<Content Include="Html\**">
+  		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  	</Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="api\vfs\site\wwwroot\pdf\testpdf.pdf" />
+    <None Remove="Html\b.html" />
+    <None Remove="Html\test\a.html" />
+  </ItemGroup>
+  <ItemGroup>
+  	<Content Include="PDF\**">
+  		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  	</Content>
+  </ItemGroup>
+	<ItemGroup>
+		<Content Include="api\**">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="wwwroot\css\StyleSheet.css" />
+	</ItemGroup>
+</Project>
